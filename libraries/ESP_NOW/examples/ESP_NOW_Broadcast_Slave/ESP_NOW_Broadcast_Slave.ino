@@ -75,7 +75,7 @@ void register_new_master(const esp_now_recv_info_t *info, const uint8_t *data, i
   } else {
     // The slave will only receive broadcast messages
     log_v("Received a unicast message from " MACSTR, MAC2STR(info->src_addr));
-    log_v("Igorning the message");
+    log_v("Ignoring the message");
   }
 }
 
